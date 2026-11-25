@@ -1,0 +1,271 @@
+<mxfile host="app.diagrams.net" agent="manual">
+  <diagram id="seq" name="时序图">
+    <mxGraphModel dx="2298" dy="1421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="act_user" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="用户/客户端" vertex="1">
+          <mxGeometry height="40" width="100" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="life_user" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#6c8ebf;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="80" as="sourcePoint" />
+            <mxPoint x="90" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_gw" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="API网关" vertex="1">
+          <mxGeometry height="40" width="100" x="170" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="life_gw" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#6c8ebf;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="80" as="sourcePoint" />
+            <mxPoint x="220" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_orch" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Orchestrator" vertex="1">
+          <mxGeometry height="40" width="100" x="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="life_orch" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="80" as="sourcePoint" />
+            <mxPoint x="350" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_guard" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Guardrails" vertex="1">
+          <mxGeometry height="40" width="100" x="430" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="life_guard" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="80" as="sourcePoint" />
+            <mxPoint x="480" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_mem" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Memory" vertex="1">
+          <mxGeometry height="40" width="100" x="560" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="life_mem" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#d79b00;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="80" as="sourcePoint" />
+            <mxPoint x="610" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_plan" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Planner" vertex="1">
+          <mxGeometry height="40" width="100" x="690" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="life_plan" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="80" as="sourcePoint" />
+            <mxPoint x="740" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_llm" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Reasoner(LLM)" vertex="1">
+          <mxGeometry height="40" width="100" x="820" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="life_llm" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#b85450;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="80" as="sourcePoint" />
+            <mxPoint x="870" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_tool" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="ToolManager" vertex="1">
+          <mxGeometry height="40" width="100" x="950" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="life_tool" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#9673a6;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="80" as="sourcePoint" />
+            <mxPoint x="1000" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_ext" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="外部工具/API" vertex="1">
+          <mxGeometry height="40" width="100" x="1080" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="life_ext" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#9673a6;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1130" y="80" as="sourcePoint" />
+            <mxPoint x="1130" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_vec" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="向量数据库" vertex="1">
+          <mxGeometry height="40" width="100" x="1210" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="life_vec" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;strokeColor=#d79b00;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="80" as="sourcePoint" />
+            <mxPoint x="1260" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s1" edge="1" parent="1" style="html=1;endArrow=block;" value="1. 发送用户请求">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="130" as="sourcePoint" />
+            <mxPoint x="220" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s2" edge="1" parent="1" style="html=1;endArrow=block;" value="2. 鉴权 &amp; 限流">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="170" as="sourcePoint" />
+            <mxPoint x="220" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s3" edge="1" parent="1" style="html=1;endArrow=block;" value="3. 转发请求">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="250" as="sourcePoint" />
+            <mxPoint x="350" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4" edge="1" parent="1" style="html=1;endArrow=block;" value="4. 输入安全校验">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="290" as="sourcePoint" />
+            <mxPoint x="480" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s5" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;" value="5. 校验通过">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="330" as="sourcePoint" />
+            <mxPoint x="350" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s6" edge="1" parent="1" style="html=1;endArrow=block;" value="6. 读取短期记忆/用户画像">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="370" as="sourcePoint" />
+            <mxPoint x="610" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s7" edge="1" parent="1" style="html=1;endArrow=block;" value="7. 检索相关长期记忆(RAG)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="410" as="sourcePoint" />
+            <mxPoint x="1260" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s8" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;" value="8. 返回相关片段">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s9" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;" value="9. 返回上下文">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="490" as="sourcePoint" />
+            <mxPoint x="350" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s10" edge="1" parent="1" style="html=1;endArrow=block;" value="10. 请求任务规划">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="530" as="sourcePoint" />
+            <mxPoint x="740" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s11" edge="1" parent="1" style="html=1;endArrow=block;" value="11. 调用 LLM 生成计划">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="570" as="sourcePoint" />
+            <mxPoint x="870" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s12" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;" value="12. 返回任务分解">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="610" as="sourcePoint" />
+            <mxPoint x="740" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s13" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;" value="13. 返回执行计划">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="650" as="sourcePoint" />
+            <mxPoint x="350" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="frame" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;boundedLbl=1;width=120;height=20;fillColor=none;strokeColor=#999999;verticalAlign=top;align=left;spacingLeft=6;" value="loop  每一步任务" vertex="1">
+          <mxGeometry height="360" width="1260" x="60" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="s14" edge="1" parent="1" style="html=1;endArrow=block;" value="14. 推理当前步骤">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="760" as="sourcePoint" />
+            <mxPoint x="870" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s15" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;" value="15. 决定调用工具">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="800" as="sourcePoint" />
+            <mxPoint x="350" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s16" edge="1" parent="1" style="html=1;endArrow=block;" value="16. 请求工具调用">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="840" as="sourcePoint" />
+            <mxPoint x="1000" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s17" edge="1" parent="1" style="html=1;endArrow=block;" value="17. 执行工具(检索/API/代码)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="880" as="sourcePoint" />
+            <mxPoint x="1130" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s18" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;" value="18. 返回结果">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1130" y="920" as="sourcePoint" />
+            <mxPoint x="1000" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s19" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;" value="19. 回填结果">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="960" as="sourcePoint" />
+            <mxPoint x="350" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s20" edge="1" parent="1" style="html=1;endArrow=block;" value="20. 基于结果继续推理">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="1000" as="sourcePoint" />
+            <mxPoint x="870" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s21" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;" value="21. 生成最终回答">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="1080" as="sourcePoint" />
+            <mxPoint x="350" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s22" edge="1" parent="1" style="html=1;endArrow=block;" value="22. 输出安全校验">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="1120" as="sourcePoint" />
+            <mxPoint x="480" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s23" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;" value="23. 校验通过">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="1160" as="sourcePoint" />
+            <mxPoint x="350" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s24" edge="1" parent="1" style="html=1;endArrow=block;" value="24. 更新/写入记忆">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="1200" as="sourcePoint" />
+            <mxPoint x="610" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s25" edge="1" parent="1" style="html=1;endArrow=block;" value="25. 存储向量化记忆">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="1240" as="sourcePoint" />
+            <mxPoint x="1260" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s26" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;" value="26. 返回响应">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="1280" as="sourcePoint" />
+            <mxPoint x="220" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s27" edge="1" parent="1" style="html=1;endArrow=open;dashed=1;" value="27. 展示结果">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="1320" as="sourcePoint" />
+            <mxPoint x="90" y="1320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s28" edge="1" parent="1" style="html=1;endArrow=block;strokeColor=#666666;" value="28. 记录 Trace/指标(可观测性)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="1360" as="sourcePoint" />
+            <mxPoint x="350" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
